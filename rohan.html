@@ -1,0 +1,94 @@
+<div className="font-sans">
+      <header className="flex justify-between items-center p-4 bg-white shadow">
+        <h1 className="text-2xl font-bold">RetailIntel</h1>
+        <nav className="space-x-6 hidden md:flex">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#demo">Demo</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <Button className="rounded-2xl">Get Started</Button>
+      </header>
+      <section className="grid md:grid-cols-2 items-center gap-8 p-8 bg-gradient-to-r from-blue-50 to-blue-100">
+        <div>
+          <h2 className="text-4xl font-bold mb-4">AI-Powered Retail Insights — Simplified for Small Businesses</h2>
+          <p className="mb-6 text-lg">Affordable, multilingual, voice-enabled analytics for small retailers.</p>
+          <div className="flex space-x-4">
+            <Button className="rounded-2xl">Start Free Trial</Button>
+            <Button variant="outline" className="rounded-2xl">Watch Demo</Button>
+          </div>
+        </div>
+        <div>
+          <img src="dashboard-mockup.png" breadth="400" height ="500" alt="RetailIntel Demo" className="rounded-2xl shadow-xl" />
+        </div>
+      </section>
+      <section id="features" className="p-8">
+        <h3 className="text-3xl font-bold mb-6 text-center">Why RetailIntel?</h3>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card>
+            <CardContent className="p-4">
+              <h4 className="font-bold text-xl mb-2">Real-Time Insights</h4>
+              <p>Track sales & inventory live with predictive analytics.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h4 className="font-bold text-xl mb-2">Voice-Enabled AI</h4>
+              <p>Local language voice commands make data access simple.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h4 className="font-bold text-xl mb-2">Affordable & Tailored</h4>
+              <p>Built for Indian SMBs with local market needs in mind.</p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+      <section className="p-8 bg-blue-50">
+        <h3 className="text-3xl font-bold mb-6 text-center">Features</h3>
+        <div className="grid md:grid-cols-3 gap-6">
+          {["Automated Data Integration", "Inventory Optimization", "Customer Segmentation", "Custom Reports", "Secure Cloud Hosting"].map(feature => (
+            <div className="flex items-center space-x-3">
+              <CheckCircle className="text-blue-500" />
+              <span>{feature}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="p-8">
+        <h3 className="text-3xl font-bold mb-6 text-center">What Our Users Say</h3>
+        <Card className="max-w-3xl mx-auto">
+          <CardContent className="p-6">
+            <p className="text-lg italic">"RetailIntel made managing my shop inventory super simple! I feel confident and in control now."</p>
+            <p className="mt-4 font-semibold">- Rajesh Gupta, Grocery Store Owner, Jaipur</p>
+          </CardContent>
+        </Card>
+      <section id="pricing" className="p-8 bg-blue-100">
+        <h3 className="text-3xl font-bold mb-6 text-center">Pricing</h3>
+        <div className="grid md:grid-cols-3 gap-6">
+          {[{ plan: "Free Trial", price: "₹0", desc: "14-day trial" }, { plan: "Starter", price: "₹999/mo", desc: "For small businesses" }, { plan: "Pro", price: "₹1999/mo", desc: "For growing stores" }].map(({ plan, price, desc }) => (
+            <Card>
+              <CardContent className="p-6 text-center">
+                <h4 className="font-bold text-xl mb-2">{plan}</h4>
+                <p className="text-2xl font-bold mb-4">{price}</p>
+                <p className="mb-4">{desc}</p>
+                <Button className="rounded-2xl">Choose Plan</Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+      <section id="contact" className="p-8">
+        <h3 className="text-3xl font-bold mb-6 text-center">Contact Us</h3>
+        <div className="max-w-xl mx-auto space-y-4 text-center">
+          <p>📞 Phone: +91-XXXXXXX</p>
+          <p>📧 Email: support@retailintel.ai</p>
+          <p>📍 Kolkata, India</p>
+          <Button className="rounded-2xl">Schedule a Demo</Button>
+        </div>
+      </section>
+      <footer className="p-4 text-center text-sm text-gray-500">
+        © 2025 RetailIntel | Privacy Policy | Terms | Careers
+      </footer>
+    </div>
